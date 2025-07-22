@@ -4,7 +4,6 @@ const close = document.getElementById("close");
 if (bar) {
   bar.addEventListener("click", () => {
     nav.classList.add("active");
-    
   });
 }
 if (close) {
@@ -17,9 +16,7 @@ if (close) {
 const modeToggle = document.getElementById("mode-toggle");
 const body = document.body;
 const imgToggle = document.getElementById("img-toggle");
-console.log("body.attributes",);
-
-
+console.log("body.attributes");
 
 modeToggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
@@ -27,9 +24,10 @@ modeToggle.addEventListener("click", () => {
   const isDark = body.classList.contains("dark-mode");
 
   modeToggle.textContent = isDark ? "☀️" : "🌙";
-  imgToggle.setAttribute("src", isDark ? "assets/dark-mode.png" : "assets/light-mode.png");
-
-  
+  imgToggle.setAttribute(
+    "src",
+    isDark ? "assets/dark-mode.png" : "assets/light-mode.png"
+  );
 
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
@@ -40,17 +38,12 @@ window.addEventListener("DOMContentLoaded", () => {
   if (savedTheme === "dark") {
     body.classList.add("dark-mode");
     modeToggle.textContent = "☀️";
-    imgToggle.setAttribute("src", "assets/dark-mode.png");
-
+    imgToggle.setAttribute("src", "../assets/dark-mode.png");
   } else {
     body.classList.remove("dark-mode");
     modeToggle.textContent = "🌙";
-    imgToggle.setAttribute("src", "assets/light-mode.png");
+    imgToggle.setAttribute("src", "../assets/light-mode.png");
   }
- if(body.attributes){
-
- }
+  if (body.attributes) {
+  }
 });
-
-
-
