@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/cart.css" />
-    <link rel="stylesheet" href="../css/mode.css">
+    <link rel="stylesheet" href="../css/mode.css" />
   </head>
   <body>
     <section id="header">
@@ -173,5 +173,13 @@
       </div>
     </footer>
     <script src="../js/responsiveHome.js"></script>
+    <script>
+      if (window.location.pathname.includes("sub-pages/cart.html")) {
+        var loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        if (!loggedInUser) {
+          window.location.href = "../login.html";
+        }
+      }
+    </script>
   </body>
 </html>
