@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="shortcut icon" href="../assets/icon.png" type="image/.png">
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="../css/shop.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="stylesheet" href="../css/contact.css" />
-    <link rel="stylesheet" href="../css/mode.css">
+    <link rel="stylesheet" href="../css/mode.css" />
   </head>
   <body>
     <section id="header">
-      <a href="../index.html"><img src="../assets/logo.png" alt="logo" class="logo" /></a>
+      <a href="./index.html"
+        ><img
+          id="img-toggle"
+          src="../assets/light-mode.png"
+          alt="logo"
+          class="logo"
+      /></a>
       <div>
         <ul id="navbar">
           <li><a href="../index.html">Home</a></li>
@@ -34,7 +40,9 @@
               ><i class="fa-solid fa-bag-shopping"></i
             ></a>
           </li>
-          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          <a href="#" id="close"
+            ><i class="fa-solid fa-xmark" id="closeNavbarButton"></i
+          ></a>
         </ul>
       </div>
       <div id="mobile">
@@ -95,12 +103,12 @@
         <textarea name="" id="" cols="30" rows="10"></textarea>
         <button type="submit" class="normal">Submit</button>
       </form>
-      <div class="people"> 
+      <div class="people">
         <div>
           <img src="../assets/people/1.png" alt="P-1" />
           <p>
-            <span class="peopleName">John Doe</span> Senior Marketing Manager <br />Phone: +000 123
-            000 77 88 <br />Email: contact@gmail.com
+            <span class="peopleName">John Doe</span> Senior Marketing Manager
+            <br />Phone: +000 123 000 77 88 <br />Email: contact@gmail.com
           </p>
         </div>
         <div>

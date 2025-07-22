@@ -1,34 +1,33 @@
 /* Theme Variables */
 :root {
-  --bg-color: #f5f7fa;           
-  --surface-color: #ffffff;     
-  --text-color: #1a1a1a;         
-  --muted-text: #5c6b73;      
-  --primary-color: #00796b;         
-  --secondary-color: #e0f2f1;      
-  --accent-color: #e53935;          
-  --download-color:#1a1a1a;
+  --bg-color: #f5f7fa;
+  --surface-color: #ffffff;
+  --text-color: #1a1a1a;
+  --muted-text: #5c6b73;
+  --primary-color: #00796b;
+  --secondary-color: #e0f2f1;
+  --accent-color: #e53935;
+  --download-color: #1a1a1a;
   --shift-color: #1a1a1a;
-  --shadow-color: rgba(0, 0, 0, 0.08); 
+  --shadow-color: rgba(0, 0, 0, 0.08);
 }
 .dark-mode {
-  --bg-color: #1e1e1e;              
-  --surface-color: #2c2c2c;         
-  --text-color: #f1f1f1;            
-  --muted-text: #aaaaaa;           
-  --primary-color: #26a69a;         
-  --secondary-color: #355c58;       
-  --accent-color: #ef5350;          
-  --download-color:#088178;
+  --bg-color: #1e1e1e;
+  --surface-color: #2c2c2c;
+  --text-color: #f1f1f1;
+  --muted-text: #aaaaaa;
+  --primary-color: #26a69a;
+  --secondary-color: #355c58;
+  --accent-color: #ef5350;
+  --download-color: #088178;
   --shift-color: #1a1a1a;
-  --shadow-color: rgba(0, 0, 0, 0.4); 
-  
+  --shadow-color: rgba(0, 0, 0, 0.4);
 }
 /* #navbar{
   background-color:var(--download-color);
 } */
-.saveMore{
-    color:var(--shift-color)
+.saveMore {
+  color: var(--shift-color);
 }
 /* .summerCollection{
 color: var(--download-color);
@@ -40,27 +39,37 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.pro{
-    color: var(--text-color);
-}
-a,
-#navbar li a  {
+#navbar {
+  background-color: var(--surface-color);
   color: var(--text-color);
 }
-p{
-    color: var(--text-color);
+#closeNavbarButton {
+  color: var(--text-color);
 }
-a{
-    color: var(--text-color);
+#mobile i {
+  color: var(--text-color);
 }
-#product1>h2{
-    color: var(--text-color);
+.pro {
+  color: var(--text-color);
 }
-#product1>span{
-    color: var(--text-color);
+a,
+#navbar li a {
+  color: var(--text-color);
 }
-#product1>h5{
-    color: var(--text-color);
+p {
+  color: var(--text-color);
+}
+a {
+  color: var(--text-color);
+}
+#product1 > h2 {
+  color: var(--text-color);
+}
+#product1 > span {
+  color: var(--text-color);
+}
+#product1 > h5 {
+  color: var(--text-color);
 }
 
 a:hover,
@@ -83,7 +92,7 @@ button.white {
   border: none;
   transition: background-color 0.3s ease;
 }
-#mode-toggle{
+#mode-toggle {
   background-color: white;
 }
 button.white {
@@ -103,8 +112,7 @@ footer,
 #product1 .pro {
   background-color: var(--surface-color);
   box-shadow: 0 10px 30px var(--shadow-color);
-    color: var(--text-color);
-
+  color: var(--text-color);
 }
 
 /* Inputs and form elements */
@@ -122,45 +130,43 @@ select:focus {
   border-color: var(--primary-color);
   outline: none;
 }
-.summerCollection{
-    color: var(--download-color);
+.summerCollection {
+  color: var(--download-color);
 }
-#form-details .people div span{
-    color: var(--download-color);
+#form-details .people div span {
+  color: var(--download-color);
 }
-.blog-details>h4{
-    color: var(--download-color);
+.blog-details > h4 {
+  color: var(--download-color);
 }
-.col>a{
-    color: var(--text-color);
+.col > a {
+  color: var(--text-color);
 }
-.col>h4{
-      color: var(--download-color);
+.col > h4 {
+  color: var(--download-color);
 }
-.follow>h4 , a{
-    color: var(--text-color);
+.follow > h4,
+a {
+  color: var(--text-color);
 }
-.des>span{
-    color: var(--download-color);
+.des > span {
+  color: var(--download-color);
 }
-.blog-details> a{
-    color: var(--text-color);
+.blog-details > a {
+  color: var(--text-color);
 }
-.section-p1>div>h2{
-    color: var(--download-color);
+.section-p1 > div > h2 {
+  color: var(--download-color);
 }
-.section-p1>h1{
-    color: var(--download-color);
+.section-p1 > h1 {
+  color: var(--download-color);
 }
 /* .details>span , h3{
     color: var(--download-color);
 } */
-#form-details>form>h2{
-        color: var(--download-color);
-
+#form-details > form > h2 {
+  color: var(--download-color);
 }
-
-
 
 /* #header>.active
 {
@@ -168,15 +174,16 @@ select:focus {
 } */
 /* Mode Toggle Button */
 .mode-btn {
-  position: fixed; 
-   bottom: 20px;
-  right: 20px; 
+  background-color: var(--bg-color);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-    display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; 
-  font-size:1.6rem;
+  justify-content: center;
+  font-size: 1.6rem;
   box-shadow: 0 5px 15px var(--shadow-color);
 }
