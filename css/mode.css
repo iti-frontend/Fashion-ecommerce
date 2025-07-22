@@ -24,6 +24,9 @@
   --shadow-color: rgba(0, 0, 0, 0.4); 
   
 }
+/* #navbar{
+  background-color:var(--download-color);
+} */
 .saveMore{
     color:var(--shift-color)
 }
@@ -74,12 +77,14 @@ a:hover,
 /* Buttons */
 button,
 button.normal,
-button.white,
-.mode-btn {
+button.white {
   background-color: var(--primary-color);
   color: var(--surface-color);
   border: none;
   transition: background-color 0.3s ease;
+}
+#mode-toggle{
+  background-color: white;
 }
 button.white {
   background-color: transparent;
@@ -154,17 +159,24 @@ select:focus {
         color: var(--download-color);
 
 }
+
+
+
+/* #header>.active
+{
+ color: var(--download-color);
+} */
 /* Mode Toggle Button */
 .mode-btn {
-  position: fixed;
-  bottom: 20px;
+  position: fixed; 
+   bottom: 20px;
   right: 20px; 
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-   display: flex;
+  width: 40px;
+  height: 40px;
+    display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
+  justify-content: center; 
+  font-size:1.6rem;
   box-shadow: 0 5px 15px var(--shadow-color);
 }
