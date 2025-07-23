@@ -26,11 +26,11 @@ window.addEventListener("DOMContentLoaded", () => {
   if (savedTheme === "dark") {
     body.classList.add("dark-mode");
     modeToggle.textContent = "☀️";
-    imgToggle.setAttribute("src", "../assets/dark-mode.png");
+    imgToggle.setAttribute("src", "assets/dark-mode.png");
   } else {
     body.classList.remove("dark-mode");
     modeToggle.textContent = "🌙";
-    imgToggle.setAttribute("src", "../assets/light-mode.png");
+    imgToggle.setAttribute("src", "assets/light-mode.png");
   }
   if (body.attributes) {
   }
