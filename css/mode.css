@@ -63,7 +63,7 @@ a {
   color: var(--text-color);
 }
 #product1 > h2 {
-  color: var(--text-color);
+  color: var(--download-color);
 }
 #product1 > span {
   color: var(--text-color);
@@ -131,7 +131,7 @@ select:focus {
   outline: none;
 }
 .summerCollection {
-  color: var(--download-color);
+  color: var(--text-color);
 }
 #form-details .people div span {
   color: var(--download-color);
