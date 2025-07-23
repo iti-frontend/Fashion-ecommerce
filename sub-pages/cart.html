@@ -180,6 +180,13 @@
     </footer>
     <script src="../js/responsiveHome.js"></script>
         <script src="../js/logo-darkMode.js"></script>
-
+    <script>
+      if (window.location.pathname.includes("sub-pages/cart.html")) {
+        var loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+        if (!loggedInUser) {
+          window.location.href = "../login.html";
+        }
+      }
+    </script>
   </body>
 </html>

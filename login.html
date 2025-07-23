@@ -1,99 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Login & Register.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="./css/authentication.css" />
     <title>LOGIN Page</title>
-</head>
-<style>
-</style>
+  </head>
+  <style></style>
 
-<body>
+  <body>
     <div class="container">
-        <div class="log">
-            <div class="right">
-                <h1>USER LOGIN</h1>
-                <div class="input" id="user">
-                    <i class="fa-solid fa-user"><input type="text" id="email" placeholder="Email"></i>
+      <div class="log">
+        <div class="right">
+          <h1>USER LOGIN</h1>
+          <div class="input" id="user">
+            <i class="fa-solid fa-user"
+              ><input type="text" id="email" placeholder="Email"
+            /></i>
+          </div>
+          <span class="Invalid" id="invalidUser"></span>
 
-                </div>
-                <span id="invaliduser"></span>
+          <div class="input" id="password">
+            <i class="fa-solid fa-lock"
+              ><input type="password" id="pass" placeholder="Password"
+            /></i>
+          </div>
+          <span class="Invalid" id="invalidPass"></span>
 
-                <div class="input" id="password">
-                    <i class="fa-solid fa-lock"><input type="password" id="pass" placeholder="Password"></i>
-
-                </div>
-                <span id="invalidpass"></span>
-
-                <div class="foot">
-                    <span> <input type="checkbox">Remember me</span>
-                    <span>Forget your password?</span>
-                </div>
-                <div class="button">
-                    <button>LOGIN</button>
-                </div>
-                <div id="back">Don't have an account?</div>
-            </div>
-            <div class="left">
-                <img src="assets/7569998x.png" alt="" width="300px">
-                <h1>Welcome to Fasion – Where Style Meets Comfort</h1>
-                <p>At Fashon, we believe that fashion is more than just clothing—it's a way to express
-                    yourself, boost your confidence, and embrace your unique style. Whether you're looking for trendy
-                    outfits, timeless classics, or comfortable everyday wear, we’ve got you covered.</p>
-            </div>
-
+          <div class="foot">
+            <span> <input type="checkbox" />Remember me</span>
+            <span>Forget your password?</span>
+          </div>
+          <div class="button">
+            <button id="loginButton">LOGIN</button>
+          </div>
+          <a href="register.html" class="navigate" id="back"
+            >Don't have an account?</a
+          >
         </div>
+        <div class="left">
+          <img src="assets/7569998x.png" alt="" width="300px" />
+          <h1>Welcome to Fasion – Where Style Meets Comfort</h1>
+          <p>
+            At Fashon, we believe that fashion is more than just clothing—it's a
+            way to express yourself, boost your confidence, and embrace your
+            unique style. Whether you're looking for trendy outfits, timeless
+            classics, or comfortable everyday wear, we’ve got you covered.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <script>
-
-        // validation 
-
-        document.querySelector("button").addEventListener("click", function () {
-            var email = document.getElementById("email")
-            var pass = document.getElementById("pass")
-
-            var emaillocal = window.localStorage.getItem("email")
-            var passlocal = window.localStorage.getItem("pass")
-            if (email.value == emaillocal && pass.value == passlocal) {
-                open("index.html", "_self")
-            } else {
-                document.getElementById("user").style.border = "1px solid red"
-                invaliduser = document.getElementById("invaliduser")
-                invaliduser.innerText = "Invalid User"
-                invaliduser.style.color = "red"
-                invaliduser.style.fontSize = "15px"
-                invaliduser.style.marginTop = "-10px"
-                invaliduser.style.marginLeft = "-80px"
-                invaliduser.style.marginBottom = "5px"
-
-                document.getElementById("password").style.border = "1px solid red"
-                invalidpass = document.getElementById("invalidpass")
-                invalidpass.innerText = "Invalid Pass"
-                invalidpass.style.color = "red"
-                invalidpass.style.fontSize = "15px"
-                invalidpass.style.marginTop = "0px"
-                invalidpass.style.marginLeft = "-80px"
-                invalidpass.style.marginBottom = "5px"
-
-            }
-        })
-
-        // validation 
-
-        // back button
-
-        document.getElementById("back").addEventListener("click", function () {
-            open("register.html", "_self")
-        })
-
-        // back button
-
-    </script>
-</body>
-
+    <script src="./js/authentication.js"></script>
+  </body>
 </html>
+>>>>>>> main
