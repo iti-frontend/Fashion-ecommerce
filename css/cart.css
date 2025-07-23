@@ -16,6 +16,8 @@
 #cart table td:nth-child(1) {
     width: 100px;
     text-align: center;
+    color: #088178;
+    cursor: pointer;
 }
 
 #cart table td:nth-child(2) {

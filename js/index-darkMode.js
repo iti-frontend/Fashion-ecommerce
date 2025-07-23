@@ -4,7 +4,6 @@
 const modeToggle = document.getElementById("mode-toggle");
 const body = document.body;
 const imgToggle = document.getElementById("img-toggle");
-console.log("body.attributes");
 
 modeToggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
