@@ -18,6 +18,48 @@ featuredProducts.onreadystatechange = function () {
 };
 featuredProducts.send();
 
+// New Arrivals
+var NewArrivalsProductsContainer = document.getElementById(
+  "NewArrivalsProductsContainer"
+);
+
+var NewArrivals = new XMLHttpRequest();
+NewArrivals.open(
+  "GET",
+  "https://fakestoreapi.com/products/category/women's%20clothing",
+  true
+);
+
+NewArrivals.onreadystatechange = function () {
+  if (NewArrivals.readyState === 4 && NewArrivals.status === 200) {
+    var featured = JSON.parse(NewArrivals.responseText).slice(0, 4);
+
+    featured.forEach(function (product) {
+      var card = createCard(product);
+      NewArrivalsProductsContainer.appendChild(card);
+    });
+  }
+};
+NewArrivals.send();
+
+// get all products
+var shopContainer = document.getElementById("shopContainer");
+
+var shopProducts = new XMLHttpRequest();
+shopProducts.open("GET", "https://fakestoreapi.com/products", true);
+
+shopProducts.onreadystatechange = function () {
+  if (shopProducts.readyState === 4 && shopProducts.status === 200) {
+    var featured = JSON.parse(shopProducts.responseText);
+
+    featured.forEach(function (product) {
+      var card = createCard(product);
+      shopContainer.appendChild(card);
+    });
+  }
+};
+shopProducts.send();
+
 function createCard(product) {
   var card = document.createElement("div");
   card.className = "pro";
@@ -34,7 +76,7 @@ function createCard(product) {
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
-            <h4>$78</h4>
+            <h4>${product.price}</h4>
           </div>
           <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
 
