@@ -61,25 +61,35 @@ shopProducts.onreadystatechange = function () {
 shopProducts.send();
 
 function createCard(product) {
+  function createStars(rating) {
+    var fullStars = Math.round(rating);
+    var starsHTML = "";
+    for (var i = 0; i < 5; i++) {
+      if (i < fullStars) {
+        starsHTML += `<i class="fa-solid fa-star"></i>`;
+      } else {
+        starsHTML += `<i class="fa-regular fa-star"></i>`;
+      }
+    }
+    return starsHTML;
+  }
+
   var card = document.createElement("div");
   card.className = "pro";
 
   card.innerHTML = `
     <img src="${product.image}" alt="${product.title}">
-              <div class="des">
-            <span class="summerCollection">${product.category}</span>
-            <h5>${product.title}</h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>${product.price}</h4>
-          </div>
-          <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-
+    <div class="des">
+      <span class="summerCollection">${product.category}</span>
+      <h5>${product.title}</h5>
+      <div class="star">
+        ${createStars(product.rating.rate)}
+      </div>
+      <h4>$${product.price}</h4>
+    </div>
+    <a href="#" class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
   `;
 
   return card;
