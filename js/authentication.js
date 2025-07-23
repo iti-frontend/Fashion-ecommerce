@@ -17,13 +17,13 @@ function registration() {
   var password = passwordInput.value.trim();
 
   if (name.length < 3) {
-    var InvalidUser = document.getElementById("InvalidUser");
+    var InvalidUser = document.getElementById("invalidUser");
     InvalidUser.classList.add("displayInvalid");
     InvalidUser.textContent = "Name must be at lest 3 char.";
     return;
   }
   if (email.indexOf("@") == -1) {
-    var InvalidEmail = document.getElementById("InvalidEmail");
+    var InvalidEmail = document.getElementById("invalidEmail");
     InvalidEmail.classList.add("displayInvalid");
     InvalidEmail.textContent = "Please Enter valid email";
     return;
