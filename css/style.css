@@ -234,13 +234,13 @@ body {
 }
 #maincart p {
   position: absolute;
-    top: -24px;
-    right: -24px;
-    color: #fff;
-    padding: 5px 6px;
-    border-radius: 50%;
-    font-size: 7px;
-}  
+  top: -24px;
+  right: -24px;
+  color: #fff;
+  padding: 5px 6px;
+  border-radius: 50%;
+  font-size: 7px;
+}
 
 #feature {
   display: flex;
@@ -319,7 +319,7 @@ body {
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px 0;
+  margin: 15px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -330,7 +330,7 @@ body {
 
 #product1 .pro img {
   width: 100%;
-  height: 270px;
+  height: 250px;
   object-fit: contain;
   border-radius: 20px;
 }
