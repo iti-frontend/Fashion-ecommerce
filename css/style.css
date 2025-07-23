@@ -154,7 +154,6 @@ body {
 }
 
 #hero {
-  background: url(../assets/hero4.png);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -164,6 +163,48 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+#hero img {
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+#hero #left {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  color: rgb(92, 91, 91);
+  padding-left: 1%;
+  background: transparent;
+  border: 0;
+  transition: 0.6s ease;
+}
+#hero #left:hover {
+  background-color: #96969643;
+  padding: 20% 1% 20% 1%;
+  width: auto;
+}
+
+#hero #right {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  color: rgb(92, 91, 91);
+  padding-right: 1%;
+  background: transparent;
+  border: 0;
+  transition: 0.6s ease;
+}
+#hero #right:hover {
+  background-color: #96969643;
+  padding: 20% 1% 20% 1%;
+  width: auto;
 }
 
 #hero h4 {
@@ -174,17 +215,34 @@ body {
   color: #088178;
 }
 
-#hero button {
-  background: url(../assets/button.png);
-  background-color: transparent;
-  color: #088178;
+#hero .herobtn {
+  background-color: #088178;
+  color: #fff;
   border: 0;
-  padding: 14px 80px 14px 65px;
+  border-radius: 30px;
+  padding: 10px 40px;
   background-repeat: no-repeat;
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+  transition: 0.5s ease;
 }
+#hero .herobtn:hover {
+  background-color: transparent;
+  color: #088178;
+  padding: 10px 60px;
+  border: 1px solid #088178;
+  border-radius: 30px;
+}
+#maincart p {
+  position: absolute;
+    top: -24px;
+    right: -24px;
+    color: #fff;
+    padding: 5px 6px;
+    border-radius: 50%;
+    font-size: 7px;
+}  
 
 #feature {
   display: flex;
