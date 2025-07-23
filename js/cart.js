@@ -60,11 +60,18 @@ function createTr(product) {
   })
 
 
-  // delete row 
+  // delete row from body & localstorage
 
   tr.querySelector('.delete-icon').addEventListener('click', function () {
     tr.remove();
+    localStorage.removeItem("cartItems");
+
   })
 
   return tr;
 }
+
+document.querySelector(".proceed").addEventListener("click", function () {
+  alert("Thank you for your purchase!");
+  localStorage.removeItem("cartItems");
+});
