@@ -619,3 +619,12 @@ footer .copyright {
 .logo {
   height: 40px;
 }
+
+.heroImg {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.heroImg.active {
+  opacity: 1;
+}
