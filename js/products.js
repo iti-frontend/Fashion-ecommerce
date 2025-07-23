@@ -1,3 +1,4 @@
+// FeaturedProducts
 var featuredProductsContainer = document.getElementById(
   "featuredProductsContainer"
 );
@@ -15,7 +16,6 @@ featuredProducts.onreadystatechange = function () {
     });
   }
 };
-
 featuredProducts.send();
 
 function createCard(product) {
