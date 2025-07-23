@@ -87,10 +87,23 @@ function createCard(product) {
       </div>
       <h4>$${product.price}</h4>
     </div>
-    <a href="#" class="cart">
+    <button class="cart">
       <i class="fa-solid fa-cart-shopping"></i>
-    </a>
+    </button>
   `;
 
+  const cartButton = card.querySelector(".cart");
+  cartButton.addEventListener("click", function (e) {
+    e.stopPropagation();
+    addProductToLocalStorage(product);
+  });
+
   return card;
+}
+
+var localStorageCart = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+function addProductToLocalStorage(product) {
+  localStorageCart.push(product);
+  localStorage.setItem("cartItems", JSON.stringify(localStorageCart));
 }
