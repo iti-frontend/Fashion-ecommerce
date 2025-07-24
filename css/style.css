@@ -548,9 +548,7 @@ body {
   overflow: hidden;
   transition: 0.5s;
 }
-#banner3 .banner-box:hover h4{
-  margin-top: 0;
-}
+
 #banner3 h4 {
   color: white;
   font-weight: 900;
@@ -559,7 +557,9 @@ body {
     transition: 1s;
 
 }
-
+#banner3 .banner-box:hover h4{
+  margin-top: 0;
+}
 #banner3 h3 {
   color: #ec544e;
   font-weight: 800;
