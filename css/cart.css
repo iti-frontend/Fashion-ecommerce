@@ -16,6 +16,8 @@
 #cart table td:nth-child(1) {
     width: 100px;
     text-align: center;
+    color: #088178;
+    cursor: pointer;
 }
 
 #cart table td:nth-child(2) {
@@ -84,13 +86,28 @@
     width: 60%;
     margin-right: 10px;
     border: 1px solid #c8cac7;
+    border-radius: 30px;
 }
 
-#coupon button,
-#sub-total button {
+#coupon p{
+    text-align: center;
+    font-size: 20px;
+    margin-top:50px ;
+}
+.proceed {
     background-color: #088178;
     color: white;
+    border-radius: 30px;
     padding: 12px 20px;
+}
+.proceed:hover {
+    background-color: transparent;
+    color: #088178;
+    border: 1px solid #088178;
+    border-radius: 30px;
+    padding: 12px 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 #sub-total {
@@ -98,12 +115,17 @@
     margin-bottom: 30px;
     border: 1px solid #e2e2e2;
     padding: 30px;
-}
+    border-radius: 30px;
 
+}
+#sub-total h3{
+    margin-bottom: 10px;
+}
 #sub-total table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    
 }
 
 #sub-total table td {

@@ -18,7 +18,7 @@ if (localStorageCart.length > 0) {
       quantitySpan.textContent = newQuantity;
 
       var totalCell = existingRow.querySelector(".total-price");
-      totalCell.textContent = "$" + (newQuantity * product.price).toFixed(2);
+      totalCell.textContent = (newQuantity * product.price).toFixed(2);
     } else {
       var tr = createTr(product);
       cartTableBody.appendChild(tr);
@@ -85,3 +85,22 @@ function updateTotalCart() {
 
   return total;
 }
+
+var checkoutButton = document.getElementById("checkout");
+
+checkoutButton.addEventListener("click", function () {
+  if (localStorageCart.length === 0) {
+    alert("Your cart is already empty!");
+    return;
+  }
+
+  alert("Thank you for your purchase! 🛒");
+
+  localStorage.removeItem("cartItems");
+  localStorageCart = [];
+
+  cartTableBody.innerHTML = "";
+
+  updateTotalCart();
+  window.location.href = "shop.html";
+});
