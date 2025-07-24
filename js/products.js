@@ -4,11 +4,11 @@ var featuredProductsContainer = document.getElementById(
 );
 
 var featuredProducts = new XMLHttpRequest();
-featuredProducts.open("GET", "https://fakestoreapi.com/products?limit=4", true);
+featuredProducts.open("GET", "data/products.json", true);
 
 featuredProducts.onreadystatechange = function () {
   if (featuredProducts.readyState === 4 && featuredProducts.status === 200) {
-    var featured = JSON.parse(featuredProducts.responseText);
+    var featured = JSON.parse(featuredProducts.responseText).slice(4, 8);
 
     featured.forEach(function (product) {
       var card = createCard(product);
@@ -24,11 +24,7 @@ var NewArrivalsProductsContainer = document.getElementById(
 );
 
 var NewArrivals = new XMLHttpRequest();
-NewArrivals.open(
-  "GET",
-  "https://fakestoreapi.com/products/category/women's%20clothing",
-  true
-);
+NewArrivals.open("GET", "data/products.json", true);
 
 NewArrivals.onreadystatechange = function () {
   if (NewArrivals.readyState === 4 && NewArrivals.status === 200) {
@@ -46,7 +42,7 @@ NewArrivals.send();
 var shopContainer = document.getElementById("shopContainer");
 
 var shopProducts = new XMLHttpRequest();
-shopProducts.open("GET", "https://fakestoreapi.com/products", true);
+shopProducts.open("GET", "../data/products.json", true);
 
 shopProducts.onreadystatechange = function () {
   if (shopProducts.readyState === 4 && shopProducts.status === 200) {
@@ -78,7 +74,7 @@ function createCard(product) {
   card.className = "pro";
 
   card.innerHTML = `
-    <img src="${product.image}" alt="${product.title}">
+    <img src="${product.mainImage}" alt="${product.title}">
     <div class="des">
       <span class="summerCollection">${product.category}</span>
       <h5>${product.title}</h5>

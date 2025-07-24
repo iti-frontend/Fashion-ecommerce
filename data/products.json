@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "title": "Woman Shawl",
+    "price": 399.99,
+    "description": "Material\tPolyester Blend\nColour Name\tMulticolour\nDepartment\tWomen",
+    "category": "woman clothes",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680403397402-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403397482-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403397482-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403397483-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403397485-4.jpeg"
+    ],
+    "rating": { "rate": 4.8, "count": 420 }
+  },
+  {
+    "id": 2,
+    "title": "Leather Backpack - Urban Travel",
+    "price": 89.99,
+    "description": "Stylish and durable leather backpack, perfect for travel and daily use.",
+    "category": "Fashion",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680403266739-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403266805-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403266806-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403266806-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403266807-4.jpeg"
+    ],
+    "rating": { "rate": 4.3, "count": 234 }
+  },
+  {
+    "id": 3,
+    "title": "Wireless Headphones - Noise Cancelling",
+    "price": 129.99,
+    "description": "Enjoy immersive sound and noise cancellation with our top wireless headphones.",
+    "category": "woman clothes",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680403156501-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403156555-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403156555-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403156554-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680403156556-4.jpeg"
+    ],
+    "rating": { "rate": 4.6, "count": 980 }
+  },
+  {
+    "id": 4,
+    "title": "Men's Sneakers - Classic White",
+    "price": 59.99,
+    "description": "Comfortable and stylish white sneakers for daily wear.",
+    "category": "Fashion",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680403156501-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402838330-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402838331-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402838332-4.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402838331-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402838332-5.jpeg"
+    ],
+    "rating": { "rate": 4.4, "count": 754 }
+  },
+  {
+    "id": 5,
+    "title": "Smartwatch - Fitness Tracker",
+    "price": 79.99,
+    "description": "Track your health and stay connected with this stylish smartwatch.",
+    "category": "Electronics",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680402563605-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402563676-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402563676-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402563677-4.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402563675-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402563677-5.jpeg"
+    ],
+    "rating": { "rate": 4.5, "count": 600 }
+  },
+  {
+    "id": 6,
+    "title": "Graphic T-Shirt - Route Dev Life",
+    "price": 24.99,
+    "description": "Cotton T-shirt with developer life artwork from Route Academy.",
+    "category": "Clothing",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680402411833-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402411883-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402411883-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402411883-1.jpeg"
+    ],
+    "rating": { "rate": 4.7, "count": 198 }
+  },
+  {
+    "id": 7,
+    "title": "Laptop - UltraBook Pro 15",
+    "price": 999.99,
+    "description": "Sleek, fast, and powerful ultrabook laptop for professionals.",
+    "category": "Electronics",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680402295928-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402296306-3.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402296305-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680402296305-2.jpeg"
+    ],
+    "rating": { "rate": 4.9, "count": 305 }
+  },
+  {
+    "id": 8,
+    "title": "Coffee Mug - Code & Chill",
+    "price": 14.99,
+    "description": "Ceramic coffee mug for developers. Great for late-night coding.",
+    "category": "Home",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680401893316-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401893496-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401893496-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401893497-4.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401893496-3.jpeg"
+    ],
+    "rating": { "rate": 4.2, "count": 89 }
+  },
+  {
+    "id": 9,
+    "title": "Bluetooth Speaker - BoomX",
+    "price": 49.99,
+    "description": "Powerful bass and portable design for music anywhere.",
+    "category": "Electronics",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680401672268-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401672624-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401672623-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401672624-3.jpeg"
+    ],
+    "rating": { "rate": 4.3, "count": 320 }
+  },
+  {
+    "id": 10,
+    "title": "Route Academy - UI/UX Design Course",
+    "price": 299.99,
+    "description": "Learn user experience and interface design with practical projects at Route Academy.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680401176411-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401176767-2.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401176766-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401176768-3.jpeg"
+    ],
+    "rating": { "rate": 4.6, "count": 210 }
+  },
+  {
+    "id": 11,
+    "title": "Keyboard - Mechanical RGB",
+    "price": 69.99,
+    "description": "Backlit RGB mechanical keyboard with blue switches.",
+    "category": "Electronics",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680401528864-cover.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401528923-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680401528924-2.jpeg"
+    ],
+    "rating": { "rate": 4.8, "count": 478 }
+  },
+  {
+    "id": 12,
+    "title": "Route Academy - Full-Stack Web Development",
+    "price": 749.99,
+    "description": "Become a full-stack web developer by mastering both front-end and back-end technologies at Route Academy.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1678464520030-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1678464520030-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1678464520030-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1678464520030-2.jpeg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Route Academy - UI/UX Design Course",
+    "price": 499.99,
+    "description": "Master user interface and user experience design using industry-leading tools and methods.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1683122156272-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683122156272-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683122156272-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683122156272-2.jpeg"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Route Academy - Mobile App Development",
+    "price": 699.99,
+    "description": "Build cross-platform mobile apps using Flutter and React Native in this comprehensive course.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1682616587165-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1682616587165-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1682616587165-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1682616587165-2.jpeg"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Route Academy - DevOps Engineering",
+    "price": 899.99,
+    "description": "Learn CI/CD, Docker, Kubernetes, and cloud deployment techniques in Route’s DevOps program.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1683906597930-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683906597930-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683906597930-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683906597930-2.jpeg"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Route Academy - Cybersecurity Bootcamp",
+    "price": 799.99,
+    "description": "Get hands-on with penetration testing, network security, and digital forensics with Route.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1683031702675-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683031702675-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683031702675-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1683031702675-2.jpeg"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Route Academy - Data Science Program",
+    "price": 849.99,
+    "description": "Learn Python, statistics, machine learning, and data visualization in this Route course.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680443364736-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680443364736-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680443364736-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680443364736-2.jpeg"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Route Academy - Digital Marketing",
+    "price": 599.99,
+    "description": "Master SEO, SEM, social media, content creation, and analytics through Route’s marketing course.",
+    "category": "Education",
+    "mainImage": "https://ecommerce.routemisr.com/Route-Academy-products/1680908314927-0.jpeg",
+    "images": [
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680908314927-0.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680908314927-1.jpeg",
+      "https://ecommerce.routemisr.com/Route-Academy-products/1680908314927-2.jpeg"
+    ]
+  }
+]
