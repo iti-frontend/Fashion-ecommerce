@@ -102,7 +102,16 @@ body {
   top: 0;
   left: 0;
 }
-
+#header .counter{
+  position: absolute;
+  top: -25px;
+  right: 5px;
+  font-size: 10px;
+  background-color: #088178;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
 #navbar {
   display: flex;
   align-items: center;
@@ -242,6 +251,8 @@ body {
   font-size: 7px;
 }
 
+/* ---------start feature---------- */
+
 #feature {
   display: flex;
   align-items: center;
@@ -253,15 +264,15 @@ body {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
   cursor: pointer;
+  transition:0.5s
 }
 
 #feature .fe-box:hover {
-  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  box-shadow: 0px 5px 50px #08817968;
 }
 
 #feature .fe-box img {
@@ -298,6 +309,10 @@ body {
   background-color: #fff2e5;
 }
 
+/* ---------start feature---------- */
+
+/* ---------start product1---------- */
+
 #product1 {
   text-align: center;
 }
@@ -318,14 +333,16 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  filter: drop-shadow(0px 0px 10px #5c5c5c29);
   margin: 15px;
   transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 
 #product1 .pro:hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  filter: drop-shadow(0px 0px 20px #5c5c5c6b);
+  transform: scale(1.1);
 }
 
 #product1 .pro img {
@@ -341,13 +358,13 @@ body {
 }
 
 #product1 .pro .des span {
-  /* color: #606063; */
+  color: #606063;
   font-size: 12px;
 }
 
 #product1 .pro .des h5 {
   padding-top: 7px;
-  /* color: #1a1a1a; */
+  color: #1a1a1a;
   font-size: 14px;
 }
 
@@ -361,20 +378,40 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #088178;
+  margin-left: -100px;
+  transition: 0.5s;
 }
-
+#product1 .pro:hover h4{
+  margin-left: 0;
+}
 #product1 .pro .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #e8f6ea;
+  background-color: #fca0a073;
   font-weight: 500;
-  color: #088178;
+  color: rgb(170, 26, 26);
   position: absolute;
   bottom: 20px;
-  right: 10px;
+  right: 40%;
+  transition: 0.5s;
+  cursor: pointer;
 }
+#product1 .pro .cart:hover{
+  transform: scale(1.3);
+    filter: drop-shadow(0px 0px 10px #5c5c5c49);
+
+}
+#product1 .pro:hover .cart{
+  right: 10px;
+  color: #088178;
+  background-color: #99f4ee88;
+}
+
+/* ---------end product1---------- */
+
+/* ---------start banner---------- */
 
 #banner {
   display: flex;
@@ -403,11 +440,22 @@ body {
 #banner h2 span {
   color: #ef3636;
 }
-
-#banner button:hover {
+#banner button{
   background-color: #ef3636;
+  border-radius: 30px;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+#banner button:hover {
+  background-color: transparent;
+  border: 1px solid #ef3636;
+  padding: 15px 50px;
   color: #fff;
 }
+
+/* ---------end banner---------- */
+
+/* ---------start sm-banner---------- */
 
 #sm-banner {
   display: flex;
@@ -420,14 +468,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url(../assets/banner/b17.jpg);
   width: 570px;
   height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 30px;
+  position: relative;
 }
+#sm-banner .bannner-box img{
+  position: absolute;
+  z-index: 1;
+    transition: 0.5s;
 
+}
+#sm-banner .bannner-box .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+  z-index: 1;
+}
 #sm-banner .bannner-box h4 {
   color: white;
   font-size: 20px;
@@ -446,15 +507,23 @@ body {
   font-weight: 500;
   padding-bottom: 15px;
 }
-
+#sm-banner .bannner-box button{
+  padding: 10px 20px;
+  transition: 0.5s;
+}
 #sm-banner .bannner-box:hover button {
   background-color: #088178;
-  border: 1px solid #088178;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+#sm-banner .bannner-box:hover img{
+  filter: blur(3px);
 }
 
-#sm-banner .bannner-box:nth-child(2) {
-  background: url(../assets/banner/b10.jpg);
-}
+/* ---------end sm-banner---------- */
+
+/* ---------start banner3---------- */
+
 
 #banner3 {
   display: flex;
@@ -476,12 +545,19 @@ body {
   background-position: center;
   padding: 30px;
   margin-bottom: 20px;
+  overflow: hidden;
+  transition: 0.5s;
 }
-
+#banner3 .banner-box:hover h4{
+  margin-top: 0;
+}
 #banner3 h4 {
   color: white;
   font-weight: 900;
   font-size: 22px;
+  margin-top: 600px;
+    transition: 1s;
+
 }
 
 #banner3 h3 {
@@ -501,6 +577,8 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+/* ---------end banner3---------- */
 
 #newsletter {
   display: flex;

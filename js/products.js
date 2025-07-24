@@ -107,3 +107,17 @@ function addProductToLocalStorage(product) {
   localStorageCart.push(product);
   localStorage.setItem("cartItems", JSON.stringify(localStorageCart));
 }
+
+var counter = document.getElementsByClassName("counter")[0];
+function updateCartCounter() {
+  var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  counter.textContent = cartItems.length;
+
+  updateCartCounter();
+}
+function addProductToLocalStorage(product) {
+  var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  cartItems.push(product);
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  updateCartCounter();
+}
