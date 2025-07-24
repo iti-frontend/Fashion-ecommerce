@@ -34,7 +34,7 @@ function createTr(product) {
     <td>
       <button class="delete__button">Delete</button>
     </td>
-    <td><img src="${product.image}" alt="${product.title}" width="50"/></td>
+    <td><img src="${product.mainImage}" alt="${product.title}" width="50"/></td>
     <td>${product.title}</td>
     <td>${product.price}</td>
     <td><span class="product-quantity">1</span></td>
