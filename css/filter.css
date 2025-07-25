@@ -1,0 +1,13 @@
+.filterSection {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filterSection input {
+  padding: 20px;
+  border: 2px solid #26a69a;
+  width: 50%;
+  font-size: 1rem;
+  border-radius: 10px;
+}
