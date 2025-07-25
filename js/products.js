@@ -96,6 +96,7 @@ function createCard(product) {
   var card = document.createElement("div");
   card.className = "pro";
 
+
   card.innerHTML =
     '<img src="' +
     product.mainImage +
@@ -117,6 +118,27 @@ function createCard(product) {
     "</h4>" +
     "</div>" +
     '<button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>';
+
+  card.innerHTML = `
+    <img src="${product.mainImage}" alt="${product.title}">
+    <div class="des">
+      <span class="summerCollection">${product.category}</span>
+      <h5>${product.title}</h5>
+      <div class="star">
+        ${createStars(product.rating.rate)}
+      </div>
+      <h4>$${product.price}</h4>
+    </div>
+    <button class="cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+  `;
+
+  card.addEventListener("click", function () {
+    localStorage.setItem("selectedproduct", JSON.stringify(product))
+    open("../sub-pages/details.html", "_self")
+  })
+
 
   var cartButton = card.querySelector(".cart");
   cartButton.addEventListener("click", function (e) {
@@ -143,3 +165,4 @@ function addProductToLocalStorage(product) {
 }
 
 updateCartCounter();
+
