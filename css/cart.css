@@ -150,3 +150,39 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.decrease-qty{
+    width: 20px;
+    margin: 0 8px;
+    border-radius: 7px;
+}
+.increase-qty{
+     width: 20px;
+    margin: 0 8px;
+     border-radius: 7px;
+}
+.delete__button{
+         width:50px;
+    margin: 2px 8px;
+     border-radius: 7px;
+}

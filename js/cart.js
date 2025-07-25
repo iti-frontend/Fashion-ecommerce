@@ -37,9 +37,48 @@ function createTr(product) {
     <td><img src="${product.mainImage}" alt="${product.title}" width="50"/></td>
     <td>${product.title}</td>
     <td>${product.price}</td>
-    <td><span class="product-quantity">1</span></td>
-    <td>$ <span class="total-price">${product.price}</span></td>
+    <td>
+      <button class="decrease-qty">-</button>
+      <span class="product-quantity">${product.quantity || 1}</span>
+      <button class="increase-qty">+</button>
+    </td>
+    <td>$ <span class="total-price">${(product.price * (product.quantity || 1)).toFixed(2)}</span></td>
   `;
+
+  var quantitySpan = tr.querySelector(".product-quantity");
+  var totalPriceSpan = tr.querySelector(".total-price");
+
+  var increaseBtn = tr.querySelector(".increase-qty");
+  var decreaseBtn = tr.querySelector(".decrease-qty");
+
+  increaseBtn.addEventListener("click", function () {
+    var quantity = parseInt(quantitySpan.textContent);
+    quantity++;
+    quantitySpan.textContent = quantity;
+    totalPriceSpan.textContent = (quantity * product.price).toFixed(2);
+    updateProductQuantity(product.id, quantity);
+    updateTotalCart();
+  });
+
+  decreaseBtn.addEventListener("click", function () {
+    var quantity = parseInt(quantitySpan.textContent);
+    if (quantity > 1) {
+      quantity--;
+      quantitySpan.textContent = quantity;
+      totalPriceSpan.textContent = (quantity * product.price).toFixed(2);
+      updateProductQuantity(product.id, quantity);
+      updateTotalCart();
+    }
+  });
+  function updateProductQuantity(productId, newQuantity) {
+  for (let i = 0; i < localStorageCart.length; i++) {
+    if (localStorageCart[i].id === productId) {
+      localStorageCart[i].quantity = newQuantity;
+      break;
+    }
+  }
+  localStorage.setItem("cartItems", JSON.stringify(localStorageCart));
+}
 
   var deleteButton = tr.querySelector(".delete__button");
   deleteButton.addEventListener("click", function () {
@@ -48,6 +87,7 @@ function createTr(product) {
 
   return tr;
 }
+
 
 function deleteItem(tr, product) {
   tr.remove();
