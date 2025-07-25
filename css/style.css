@@ -102,7 +102,7 @@ body {
   top: 0;
   left: 0;
 }
-#header .counter{
+#header .counter {
   position: absolute;
   top: -25px;
   right: 5px;
@@ -268,7 +268,7 @@ body {
   border-radius: 4px;
   margin: 15px 0;
   cursor: pointer;
-  transition:0.5s
+  transition: 0.5s;
 }
 
 #feature .fe-box:hover {
@@ -381,7 +381,7 @@ body {
   margin-left: -100px;
   transition: 0.5s;
 }
-#product1 .pro:hover h4{
+#product1 .pro:hover h4 {
   margin-left: 0;
 }
 #product1 .pro .cart {
@@ -394,17 +394,20 @@ body {
   color: rgb(170, 26, 26);
   position: absolute;
   bottom: 20px;
-  right: 40%;
-  transition: 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-#product1 .pro .cart:hover{
-  transform: scale(1.3);
-    filter: drop-shadow(0px 0px 10px #5c5c5c49);
 
+#product1 .pro .cart:hover {
+  transform: translateX(-50%) scale(1.3);
+  filter: drop-shadow(0px 0px 10px #5c5c5c49);
 }
-#product1 .pro:hover .cart{
-  right: 10px;
+
+#product1 .pro:hover .cart {
+  left: calc(100% - 50px);
+  transform: translateX(0);
   color: #088178;
   background-color: #99f4ee88;
 }
@@ -440,7 +443,7 @@ body {
 #banner h2 span {
   color: #ef3636;
 }
-#banner button{
+#banner button {
   background-color: #ef3636;
   border-radius: 30px;
   padding: 15px 30px;
@@ -475,13 +478,12 @@ body {
   padding: 30px;
   position: relative;
 }
-#sm-banner .bannner-box img{
+#sm-banner .bannner-box img {
   position: absolute;
   z-index: 1;
-    transition: 0.5s;
-
+  transition: 0.5s;
 }
-#sm-banner .bannner-box .content{
+#sm-banner .bannner-box .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -507,7 +509,7 @@ body {
   font-weight: 500;
   padding-bottom: 15px;
 }
-#sm-banner .bannner-box button{
+#sm-banner .bannner-box button {
   padding: 10px 20px;
   transition: 0.5s;
 }
@@ -516,14 +518,13 @@ body {
   border-radius: 30px;
   padding: 10px 30px;
 }
-#sm-banner .bannner-box:hover img{
+#sm-banner .bannner-box:hover img {
   filter: blur(3px);
 }
 
 /* ---------end sm-banner---------- */
 
 /* ---------start banner3---------- */
-
 
 #banner3 {
   display: flex;
@@ -554,10 +555,9 @@ body {
   font-weight: 900;
   font-size: 22px;
   margin-top: 600px;
-    transition: 1s;
-
+  transition: 1s;
 }
-#banner3 .banner-box:hover h4{
+#banner3 .banner-box:hover h4 {
   margin-top: 0;
 }
 #banner3 h3 {
