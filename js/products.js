@@ -88,7 +88,12 @@ function createCard(product) {
     </button>
   `;
 
-  const cartButton = card.querySelector(".cart");
+  card.addEventListener("click", function () {
+    localStorage.setItem("selectedproduct", JSON.stringify(product))
+    open("../sub-pages/details.html", "_self")
+  })
+
+  var cartButton = card.querySelector(".cart");
   cartButton.addEventListener("click", function (e) {
     e.stopPropagation();
     addProductToLocalStorage(product);
@@ -111,9 +116,11 @@ function updateCartCounter() {
 
   updateCartCounter();
 }
+
 function addProductToLocalStorage(product) {
   var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   cartItems.push(product);
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   updateCartCounter();
 }
+
