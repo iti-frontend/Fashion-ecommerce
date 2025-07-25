@@ -146,7 +146,7 @@ function createCard(product) {
       addProductToLocalStorage(product);
     } else {
       alert("please login first");
-      window.location.href = "login.html";
+      window.location.href = "../login.html";
       return;
     }
   });
