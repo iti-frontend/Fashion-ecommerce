@@ -1,4 +1,5 @@
 // Featured Products
+var loggedInUser = localStorage.getItem("loggedInUser");
 var featuredProductsContainer = document.getElementById(
   "featuredProductsContainer"
 );
@@ -96,7 +97,6 @@ function createCard(product) {
   var card = document.createElement("div");
   card.className = "pro";
 
-
   card.innerHTML =
     '<img src="' +
     product.mainImage +
@@ -135,15 +135,20 @@ function createCard(product) {
   `;
 
   card.addEventListener("click", function () {
-    localStorage.setItem("selectedproduct", JSON.stringify(product))
-    open("../sub-pages/details.html", "_self")
-  })
-
+    localStorage.setItem("selectedproduct", JSON.stringify(product));
+    open("../sub-pages/details.html", "_self");
+  });
 
   var cartButton = card.querySelector(".cart");
   cartButton.addEventListener("click", function (e) {
     e.stopPropagation();
-    addProductToLocalStorage(product);
+    if (loggedInUser) {
+      addProductToLocalStorage(product);
+    } else {
+      alert("please login first");
+      window.location.href = "login.html";
+      return;
+    }
   });
 
   return card;
@@ -165,4 +170,3 @@ function addProductToLocalStorage(product) {
 }
 
 updateCartCounter();
-

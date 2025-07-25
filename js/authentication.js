@@ -108,7 +108,6 @@ function login() {
   }
 
   if (foundUser) {
-    alert("Login successful");
     localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
     window.location.href = "index.html";
   } else {
