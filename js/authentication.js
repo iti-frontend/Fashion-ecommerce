@@ -5,6 +5,7 @@ var localStorageUsers = JSON.parse(localStorage.getItem("users")) || [];
 if (registrationButton) {
   registrationButton.addEventListener("click", registration);
 }
+
 function registration() {
   // get registration inputs
   var nameInput = document.getElementById("username");

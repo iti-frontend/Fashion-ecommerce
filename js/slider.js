@@ -36,21 +36,4 @@ document.querySelector(".herobtn").addEventListener("click", function () {
 
 // shop now button
 
-// cart counter
 
-var cartCounter = document.getElementById("cartcounter");
-var cartCount = 0;
-var cart = document.querySelectorAll(".cart");
-var maincart = document.getElementById("maincart");
-
-cart.forEach((item) => {
-  item.addEventListener("click", () => {
-    cartCount++;
-    console.log(cartCount);
-    cartCounter.innerText = cartCount;
-    cartCounter.style.backgroundColor = "green";
-    cart.style.color = "white";
-  });
-});
-
-// cart counter
