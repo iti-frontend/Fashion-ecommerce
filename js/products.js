@@ -148,6 +148,13 @@ function createCard(product) {
     e.stopPropagation();
     if (loggedInUser) {
       addProductToLocalStorage(product);
+    } else if (
+      !window.location.href.includes("shop.html") &&
+      !window.location.href.includes("details.html")
+    ) {
+      alert("please login first");
+      window.location.href = "login.html";
+      return;
     } else {
       alert("please login first");
       window.location.href = "../login.html";
