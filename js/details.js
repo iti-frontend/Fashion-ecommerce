@@ -1,4 +1,6 @@
 var data = JSON.parse(localStorage.getItem("selectedproduct"));
+var loggedInUser = localStorage.getItem("loggedInUser");
+
 document.addEventListener("DOMContentLoaded", function () {
   if (data && document.querySelector(".productData")) {
     document.querySelector(".productData").innerHTML = `
@@ -24,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const subImages = document.querySelectorAll(".subimages img");
     const mainImage = document.getElementById("productImage");
 
-    subImages.forEach(img => {
+    subImages.forEach((img) => {
       img.addEventListener("mouseover", function () {
         mainImage.src = img.src;
       });
@@ -34,8 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var cartButton = document.querySelector(".cartbtn");
 
     cartButton.addEventListener("click", function () {
-      addProductToLocalStorage(data);
-      alert("Product added to cart!");
+      if (loggedInUser) {
+        addProductToLocalStorage(data);
+        alert("Product added to cart!");
+      } else {
+        alert("please login first");
+        window.location.href = "../login.html";
+        return;
+      }
     });
 
     function addProductToLocalStorage(data) {
