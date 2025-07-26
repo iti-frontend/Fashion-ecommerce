@@ -136,7 +136,11 @@ function createCard(product) {
 
   card.addEventListener("click", function () {
     localStorage.setItem("selectedproduct", JSON.stringify(product));
-    open("../sub-pages/details.html", "_self");
+    if (!window.location.href.includes("shop.html")) {
+      open("/sub-pages/details.html", "_self");
+    } else {
+      open("../sub-pages/details.html", "_self");
+    }
   });
 
   var cartButton = card.querySelector(".cart");
