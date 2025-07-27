@@ -1,5 +1,6 @@
 var localStorageCart = JSON.parse(localStorage.getItem("cartItems")) || [];
 var cartTableBody = document.getElementById("cartTableBody");
+var clearCart = document.getElementById("clearCart");
 
 if (localStorageCart.length === 0) {
   alert("Your cart is empty. Please add some products.");
@@ -148,5 +149,12 @@ checkoutButton.addEventListener("click", function () {
   cartTableBody.innerHTML = "";
 
   updateTotalCart();
+  window.location.href = "shop.html";
+});
+
+clearCart.addEventListener("click", function () {
+  localStorage.removeItem("cartItems");
+  cartTableBody.innerHTML = "";
+  alert("Your cart has been cleared.");
   window.location.href = "shop.html";
 });

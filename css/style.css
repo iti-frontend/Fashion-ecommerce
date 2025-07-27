@@ -706,3 +706,6 @@ footer .copyright {
 .heroImg.active {
   opacity: 1;
 }
+#clearCart {
+  background-color: red;
+}
