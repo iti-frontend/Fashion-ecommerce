@@ -42,7 +42,9 @@ function createTr(product) {
       <span class="product-quantity">${product.quantity || 1}</span>
       <button class="increase-qty">+</button>
     </td>
-    <td>$ <span class="total-price">${(product.price * (product.quantity || 1)).toFixed(2)}</span></td>
+    <td>$ <span class="total-price">${(
+      product.price * (product.quantity || 1)
+    ).toFixed(2)}</span></td>
   `;
 
   var quantitySpan = tr.querySelector(".product-quantity");
@@ -68,17 +70,19 @@ function createTr(product) {
       totalPriceSpan.textContent = (quantity * product.price).toFixed(2);
       updateProductQuantity(product.id, quantity);
       updateTotalCart();
+    } else if (quantity === 1) {
+      deleteItem(tr, product);
     }
   });
   function updateProductQuantity(productId, newQuantity) {
-  for (let i = 0; i < localStorageCart.length; i++) {
-    if (localStorageCart[i].id === productId) {
-      localStorageCart[i].quantity = newQuantity;
-      break;
+    for (let i = 0; i < localStorageCart.length; i++) {
+      if (localStorageCart[i].id === productId) {
+        localStorageCart[i].quantity = newQuantity;
+        break;
+      }
     }
+    localStorage.setItem("cartItems", JSON.stringify(localStorageCart));
   }
-  localStorage.setItem("cartItems", JSON.stringify(localStorageCart));
-}
 
   var deleteButton = tr.querySelector(".delete__button");
   deleteButton.addEventListener("click", function () {
@@ -87,7 +91,6 @@ function createTr(product) {
 
   return tr;
 }
-
 
 function deleteItem(tr, product) {
   tr.remove();
@@ -106,6 +109,7 @@ function deleteItem(tr, product) {
 
   if (localStorageCart.length === 0) {
     alert("Your cart is now empty. Please add some products.");
+    window.location.href = "shop.html";
   }
 }
 
@@ -131,6 +135,8 @@ var checkoutButton = document.getElementById("checkout");
 checkoutButton.addEventListener("click", function () {
   if (localStorageCart.length === 0) {
     alert("Your cart is already empty!");
+    window.location.href = "shop.html";
+
     return;
   }
 
