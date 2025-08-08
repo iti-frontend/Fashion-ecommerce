@@ -844,6 +844,8 @@ footer .copyright {
   #sm-banner {
     flex-direction: column;
     align-items: center;
+    display: none;
+
   }
 
   #sm-banner .bannner-box {
@@ -904,7 +906,7 @@ footer .copyright {
   }
 
   #feature .fe-box {
-    width: 90%;
+    width: 40%;
     padding: 15px 5px;
   }
 
@@ -916,7 +918,7 @@ footer .copyright {
   #banner,
   #sm-banner .bannner-box,
   #banner3 .banner-box {
-    height: 15vh;
+    height: 25vh;
     padding: 10px;
   }
 
