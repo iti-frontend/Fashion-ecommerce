@@ -727,6 +727,10 @@ footer .copyright {
   opacity: 1;
 }
 
+#clearCart {
+  background-color: red;
+}
+
 /* ...existing code... */
 
 /* Responsive Styles */
