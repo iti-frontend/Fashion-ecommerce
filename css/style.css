@@ -837,6 +837,10 @@ footer .copyright {
     margin: 10px 0;
   }
 
+  #product1 .pro .des h4 {
+    margin-left: 0;
+  }
+
   #banner {
     height: 30vh;
   }
