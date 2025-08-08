@@ -1,42 +1,48 @@
-
-.productData{
+.productData {
     display: flex;
     gap: 20px;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
 }
-.productData .info{
+
+.productData .info {
     display: flex;
     flex-direction: column;
 }
-.productData .info p{
+
+.productData .info p {
     margin: 10px;
     font-size: 20px;
     color: rgb(93, 93, 93);
 }
-.productData .info span{
+
+.productData .info span {
     font-size: 25px;
-    color:#088178;
+    color: #088178;
     font-weight: 700;
 }
-.productData .info .desc{
+
+.productData .info .desc {
     color: #088178;
     text-align: center;
     margin-top: 20px;
 }
-.productData .images{
+
+.productData .images {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.productData .images .subimages{
+
+.productData .images .subimages {
     display: flex;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.productData .info button{
+
+.productData .info button {
     margin: auto;
     padding: 10px 30px;
     color: #fff;
@@ -47,9 +53,92 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.productData .info button:hover{
+
+.productData .info button:hover {
     padding: 10px 60px;
     background-color: transparent;
     border: 1px solid #088178;
     color: #088178;
+}
+
+/* ...existing code... */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .productData {
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .productData .info p {
+        font-size: 18px;
+    }
+
+    .productData .info span {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productData {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 5px;
+    }
+
+    .productData .images,
+    .productData .info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .productData .info {
+        padding: 0 10px;
+    }
+
+    .productData .info p,
+    .productData .info span {
+        text-align: center;
+    }
+
+    .productData .info button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .productData .images .subimages {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .productData {
+        padding: 10px 2px;
+        gap: 10px;
+    }
+
+    .productData .info p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    .productData .info span {
+        font-size: 18px;
+    }
+
+    .productData .info .desc {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .productData .info button {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .productData .images .subimages {
+        gap: 5px;
+    }
 }
